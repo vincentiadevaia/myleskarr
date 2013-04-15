@@ -107,7 +107,7 @@ a:active {color:#555555;}
   padding-right: 15px;
 }
 .note {
-	margin-top: 25px;
+	padding-top: 15px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700; 
 	color:#333333;
