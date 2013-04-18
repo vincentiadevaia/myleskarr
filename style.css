@@ -70,7 +70,7 @@ a.note:hover{color:#777777; text-decoration: underline;}
 }
 .date {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 700; 
+	font-weight: 600; 
 	color:#333333;
 	font-size: 14px;
 }
@@ -130,7 +130,7 @@ a.note:hover{color:#777777; text-decoration: underline;}
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700; 
 	color:#333333;
-	font-size: 14px;
+	font-size: 13px;
 }
 .p,.answer{
 	font-family: 'Open Sans', sans-serif;
