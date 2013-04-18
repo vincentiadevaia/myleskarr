@@ -93,6 +93,9 @@ a:active {color:#555555;}
 	width: 350px;
 	margin: auto;
 }
+.imagewrapper {
+	padding-top: 30px;
+}
 .navul {
 	padding-top: 15px;
 	font-family: 'Open Sans', sans-serif;
@@ -107,7 +110,7 @@ a:active {color:#555555;}
   padding-right: 15px;
 }
 .notewrapper {
-	padding-top: 15px;
+
 	width: 100%;
 	margin: auto;
 	}
@@ -124,12 +127,12 @@ a:active {color:#555555;}
 	font-size: 18px;
 	color:#444444;
 	line-height: 1.8;
-	padding-top: 25px;
+	padding-top: 15px;
 }	
 .textpost { 
  	width: 100%;
  	text-align: left;
- 	padding-top: 15px;
+ 	padding-top: 45px;
 
 	}
 .textpostwrapper {
