@@ -25,17 +25,35 @@
 		</ul>
 	</div>
 </div>
+
 {block:Posts}
-		{block:Text}
+	{block:Text}
 		<div class="textpost">
 			<div class="textpostwrapper">
 				{block:Date}
 					<p class="date">{Month} {DayOfMonth}</p>
 				{/block:Date}
-		{Body}
-	</div>
-</div>
+				<h2 class="h2">{Title}</h2>
+				<div class="body">{Body}</div>
+				{block:NoteCount}
+				<p class="note"><a href="#"class="note">{NoteCountWithLabel}</a></p>
+				{/block:NoteCount}
+			</div>
+		</div>
 	{/block:Text}
+	{block:Photo} 
+		<div class="textpost">
+			<div class="textpostwrapper">
+				{block:Date}
+					<p class="date">{Month} {DayOfMonth}</p>
+				{/block:Date}
+					<div class="imagewrapper"><img src="{PhotoURL-500}"</div>	
+				{block:Caption}
+				<div class="body">{Caption}</div>
+				{/block:Caption}
+			</div>
+		</div>	
+	{/block:Photo} 
 {/block:Posts}	
 	
 
