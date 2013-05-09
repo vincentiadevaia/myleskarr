@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Myles Karr</title>
+	<Link rel="icon" type="image/png" href="favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href="http://vincentvondoom.com/myleskarr/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>	
+
+<div class="header">
+	<div class="headwrapper">
+		<h1 class="h1">Myles Karr</h1>
+		<ul class="navul">
+			<li class="navli"><a href="#">Archive</a></li> 
+			<li class="navli"><a href="#">Tattoos</a></li>
+			<li class="navli"><a href="#">Art</a></li> 
+			<li class="navli"><a href="#">FAQ</a></li> 
+			<li class="navli"><a href="#">Ask</a></li> 
+			<li class="navli"><a href="#">Contact</a></li> 
+		</ul>
+	</div>
+</div>
+{block:Posts}
+		{block:Text}
+		<div class="textpost">
+			<div class="textpostwrapper">
+				{block:Date}
+					<p class="date">{Month} {DayOfMonth}</p>
+				{/block:Date}
+		{Body}
+	</div>
+</div>
+	{/block:Text}
+{/block:Posts}	
+	
+
+
+
+</body>
+
+</html>
