@@ -1,4 +1,4 @@
-myleskarr
+Myles Karr Tumblr Theme
 =========
 
 This is another study in building a custom Tumblr theme.
