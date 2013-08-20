@@ -28,6 +28,8 @@ body {
 	background-color: #fff;
 	margin-bottom: 100px;
 }
+strong { font-weight: 600;  
+}
 ol, ul {
 	list-style: none;
 }
@@ -54,20 +56,42 @@ a.note:link {color:#555555; text-decoration: none;}
 a.note:hover{color:#777777; text-decoration: underline;}
 
 
-.askpost {
-	width: 100%;
- 	text-align: left;
- 	padding-top: 45px;
-	max-width: 500px;
-	margin: auto;
-	}
-.body p{
+.asker {
+font-family: 'Open Sans', sans-serif;
+	font-weight: 600; 
+	font-size: 14px;
+	color:#444444;
+	line-height: 1.8;	
+	margin-top: 15px;
+
+}
+
+.answered {
+font-family: 'Open Sans', sans-serif;
+	font-weight: 300; 
+	font-size: 18px;
+	color:#444444;
+	line-height: 1.8;
+	padding-top: 15px;	
+
+}
+
+.body, p{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300; 
 	font-size: 18px;
 	color:#444444;
 	line-height: 1.8;	
-}	
+	padding-top: 0px;
+}
+.b {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600; 
+	font-size: 18px;
+	color:#444444;
+	line-height: 1.8;	
+	padding-top: 0px;
+}		
 .break {
 	background-color: #d3d3d3;
  	height: 1px;
@@ -91,37 +115,37 @@ a.note:hover{color:#777777; text-decoration: underline;}
   color: #777777;
 }
 .h1 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700; 
-	color:#333333;
-	font-size: 18px;
-	background-image: url('header.png');
+	background-image: url('name.jpg');
 	background-repeat: no-repeat;
-	background-position: top center;
-	padding-top: 280px;
-	line-height: 2.5;
+	background-position: center;
+	padding-bottom: 10px;
+	height:111px;
 }
 .h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500; 
 	color:#333333;
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 2.5;
 	padding-top: 5px;
 
 }
 .header { 
+	padding-bottom: 50px;
+	padding-top: 50px;
  	width: 100%;
- 	height: 400px;
+ 	height: 111px;
 	text-align: center;
 	}
 .headwrapper {
-	padding-top: 15px;
 	width: 350px;
 	margin: auto;
 }
+
+
 .imagewrapper {
-	padding-top: 15px;
+	padding-top: 25px;
+	padding-bottom: 15px;
 }
 .navul {
 	padding-top: 15px;
@@ -148,7 +172,7 @@ a.note:hover{color:#777777; text-decoration: underline;}
 	color:#333333;
 	font-size: 13px;
 }
-.p,.answer{
+.answer{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300; 
 	font-size: 18px;
