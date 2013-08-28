@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<!--
+
+Tumblr theme designed and developed by Vincent Iadevaia www.vincentvondoom.com	
+-->
+
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	 <link rel="shortcut icon" href="{Favicon}" />
+    {block:Description}
+      <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+    <title>
+      {Title}
+
+      {block:SearchPage}: 
+        {lang:Search results for SearchQuery}
+      {/block:SearchPage}
+
+      {block:PostSummary}: 
+        {PostSummary}
+      {/block:PostSummary}
+    </title>
+    
+    <style type="text/css">
+
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #fff;
+	margin-bottom: 100px;
+}
+strong { font-weight: 600;  
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Website starts here!
+*/
+a:link {color:#555555;}    
+a:visited {color:#555555;} 
+a:hover {color:#777777;}   
+a:active {color:#555555;}
+
+
+.asker {
+font-family: 'Open Sans', sans-serif;
+	font-weight: 600; 
+	font-size: 14px;
+	color:#444444;
+	line-height: 1.8;	
+	margin-top: 15px;
+
+}
+
+.answered {
+font-family: 'Open Sans', sans-serif;
+	font-weight: 300; 
+	font-size: 18px;
+	color:#444444;
+	line-height: 1.8;
+	padding-top: 15px;	
+
+}
+
+.body, p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300; 
+	font-size: 18px;
+	color:#444444;
+	line-height: 1.8;	
+	padding-top: 0px;
+}
+.b {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600; 
+	font-size: 18px;
+	color:#444444;
+	line-height: 1.8;	
+	padding-top: 0px;
+}		
+.break {
+	background-color: #d3d3d3;
+ 	height: 1px;
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ 	border: none;
+}
+.date {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600; 
+	color:#333333;
+	font-size: 14px;
+}
+.followli a {
+  color: #555555;
+}
+.followli a:hover{
+  color: #777777;
+}
+.followli.active a  {
+  color: #777777;
+}
+.h1 {
+	background-image: url('http://vincentvondoom.com/myleskarr/name.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 10px;
+	height:111px;
+}
+.h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500; 
+	color:#333333;
+	font-size: 24px;
+	line-height: 2.5;
+	padding-top: 5px;
+
+}
+.header { 
+	padding-bottom: 50px;
+	padding-top: 50px;
+ 	width: 100%;
+ 	height: 111px;
+	text-align: center;
+	}
+.headwrapper {
+	width: 350px;
+	margin: auto;
+}
+
+
+.imagewrapper {
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+.navul {
+	padding-top: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400; 
+	color:#333333;
+	font-size: 14px;
+}
+.navli {
+  height: 25px;
+  display: inline;
+  list-style-type: none;
+  padding-right: 15px;
+}
+.notewrapper {
+
+	width: 100%;
+	margin: auto;
+	}
+.note{
+	color:#333333;
+	text-decoration: none;
+}
+.answer{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300; 
+	font-size: 18px;
+	color:#444444;
+	line-height: 1.8;
+}
+.question{
+	padding-top: 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600; 
+	color:#333333;
+	font-size: 16px;
+}	
+.textpost { 
+ 	width: 100%;
+ 	text-align: left;
+ 	padding-top: 45px;
+
+	}
+.textpostwrapper {
+	max-width: 500px;
+	margin: auto;
+}
+
+    </style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+       var location = document.location.href,
+           index = 2,
+           isLoadingMore = false,
+           nextPage = 'page/2';
+             
+      $(window).scroll(function(){
+        if($(window).scrollTop() + $(window).height() + 650 >= $(document).height() && !isLoadingMore) {
+          loadMore();
+        }
+      });
+
+      var loadMore = function(){
+        isLoadingMore = true;
+        var location = window.location.href;
+
+        location = (location.charAt(location.length - 1) != '/') ? location += '/' : location;
+
+        $.get(location + nextPage, function(data){
+          nextPage = nextPage.replace('page/'+index, 'page/'+ ++index);
+          location = location.split('page')[0];
+          $('.posts-list').append($(data).find('.posts-item'));
+          isLoadingMore = false;
+        });
+      }
+    });
+    </script>
+
+</head>
+
+<body>	
+
+<div class="header">
+	<div class="headwrapper">
+		<h1 class="h1"></h1>
+		<ul class="navul">
+			<li class="navli"><a href="/archive">Archive</a></li>
+			<li class="navli"><a href="/tagged/tattoos">Tattoos</a></li>
+			<li class="navli"><a href="/tagged/art">Art</a></li>
+			<li class="navli"><a href="/faq">FAQ</a></li>
+			<li class="navli"><a href="/ask">Ask</a></li>
+			<li class="navli"><a href="/contact">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="posts-list">
+
+{block:Posts}
+	{block:Text}
+		<div class="textpost posts-item">
+			<div class="textpostwrapper">
+				{block:Date}
+					<p class="date"><a href="{Permalink}" class="note">{Month} {DayOfMonth}</a></p>
+				{/block:Date}
+				<h2 class="h2">{Title}</h2>
+				<div class="body">{Body}</div>
+				{block:NoteCount}
+				<p class="note"><a href="#"class="note">{NoteCountWithLabel}</a></p>
+				{/block:NoteCount}
+			</div>
+		</div>
+	{/block:Text}
+	{block:Photo} 
+		<div class="textpost posts-item">
+			<div class="textpostwrapper">
+				{block:Date}
+					<p class="date"><a href="{Permalink}" class="note">{Month} {DayOfMonth}</a></p>
+				{/block:Date}
+					<div class="imagewrapper"><a href="{Permalink}"><img src="{PhotoURL-500}"></a></div>	
+				{block:Caption}
+				<div class="body">{Caption}</div>
+				{/block:Caption}
+			</div>
+		</div>	
+	{/block:Photo}
+	{block:Answer}
+    	<div class="textpost posts-item">
+			<div class="textpostwrapper">
+				{block:Date}
+					<p class="date"><a href="{Permalink}" class="note">{Month} {DayOfMonth}</a></p>
+				{/block:Date}
+		    	<div class="asker">
+		    	{Asker} asked: {Question}
+		    	</div>	
+		    	<div class="answered">
+		    	{Answer}
+		    	</div>
+		    </div>
+		</div>    	    					
+    {/block:Answer}
+{/block:Posts}
+</div>
+
+
+
+	
+
+
+
+</body>
+
+</html>
