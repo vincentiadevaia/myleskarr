@@ -2,13 +2,15 @@
 
 <!--
 
-Tumblr theme designed and developed by Vincent Iadevaia www.vincentvondoom.com	
+Tumblr theme designed and developed by Vincent Iadevaia www.vincentvondoom.com    
 -->
 
 <html>
 
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
 	 <link rel="shortcut icon" href="{Favicon}" />
     {block:Description}
@@ -78,37 +80,30 @@ table {
 
 /*Website starts here!
 */
-a:link {color:#555555;}    
-a:visited {color:#555555;} 
-a:hover {color:#777777;}   
-a:active {color:#555555;}
+a:link {color:#666666;}    
+a:visited {color:#666666;} 
+a:hover {color:#999999;}   
+a:active {color:#666666;}
+a.title:link {color:#333333;text-decoration: none}    
+a.title:visited {color:#333333;text-decoration: none} 
+a.title:hover {color:#666666;text-decoration: underline;}   
+a.title:active {color:#333333;text-decoration: none;}
 
 
 .asker {
-font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
 	font-weight: 600; 
 	font-size: 14px;
 	color:#444444;
 	line-height: 1.8;	
-	margin-top: 15px;
-
+	margin-top: 16px;
+	margin-bottom:16px;
 }
-
-.answered {
-font-family: 'Open Sans', sans-serif;
-	font-weight: 300; 
-	font-size: 18px;
-	color:#444444;
-	line-height: 1.8;
-	padding-top: 15px;	
-
-}
-
 .body, p{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300; 
-	font-size: 18px;
-	color:#444444;
+    font-family: 'PT Serif', serif;
+	font-weight: 400; 
+	font-size: 16px;
+	color:#666666;
 	line-height: 1.8;	
 	padding-top: 0px;
 }
@@ -128,10 +123,10 @@ font-family: 'Open Sans', sans-serif;
  	border: none;
 }
 .date {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600; 
 	color:#333333;
 	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
 .followli a {
   color: #555555;
@@ -143,23 +138,26 @@ font-family: 'Open Sans', sans-serif;
   color: #777777;
 }
 .h1 {
-	background-image: url('http://vincentvondoom.com/myleskarr/name.jpg');
+	/*background-image: url('http://vincentvondoom.com/myleskarr/name.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	padding-bottom: 10px;
-	height:111px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700; 
+	color:#333333;
+	font-size: 24px;
+	line-height: 2.5;
 }
 .h2 {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 500; 
+	font-weight: 700; 
 	color:#333333;
 	font-size: 24px;
 	line-height: 2.5;
 	padding-top: 5px;
-
 }
 .header { 
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	padding-top: 50px;
  	width: 100%;
  	height: 111px;
@@ -169,8 +167,6 @@ font-family: 'Open Sans', sans-serif;
 	width: 350px;
 	margin: auto;
 }
-
-
 .imagewrapper {
 	padding-top: 25px;
 	padding-bottom: 15px;
@@ -188,38 +184,20 @@ font-family: 'Open Sans', sans-serif;
   list-style-type: none;
   padding-right: 15px;
 }
-.notewrapper {
-
-	width: 100%;
-	margin: auto;
-	}
-.note{
-	color:#333333;
-	text-decoration: none;
-}
-.answer{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300; 
-	font-size: 18px;
-	color:#444444;
-	line-height: 1.8;
-}
-.question{
-	padding-top: 25px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600; 
-	color:#333333;
-	font-size: 16px;
-}	
 .textpost { 
  	width: 100%;
  	text-align: left;
- 	padding-top: 45px;
+ 	padding-top: 12px;
 
 	}
 .textpostwrapper {
+    border-bottom-width:1px;
+    border-style:solid;
+    border-bottom-color:#dfdfdf;
 	max-width: 500px;
 	margin: auto;
+	padding-bottom:42px;
+	padding-top:16px;
 }
 
     </style>
@@ -260,7 +238,7 @@ font-family: 'Open Sans', sans-serif;
 
 <div class="header">
 	<div class="headwrapper">
-		<h1 class="h1"></h1>
+		<h1 class="h1">Myles Karr</h1>
 		<ul class="navul">
 			<li class="navli"><a href="/archive">Archive</a></li>
 			<li class="navli"><a href="/tagged/tattoos">Tattoos</a></li>
@@ -278,23 +256,17 @@ font-family: 'Open Sans', sans-serif;
 	{block:Text}
 		<div class="textpost posts-item">
 			<div class="textpostwrapper">
-				{block:Date}
-					<p class="date"><a href="{Permalink}" class="note">{Month} {DayOfMonth}</a></p>
-				{/block:Date}
-				<h2 class="h2">{Title}</h2>
+				<!--{block:Date}-->
+				<!--	<p class="date"><a href="{Permalink}" class="note">{Month} {DayOfMonth}</a></p>-->
+				<!--{/block:Date}-->
+				<h2 class="h2"><a href="{Permalink}" class="title">{Title}</a></h2>
 				<div class="body">{Body}</div>
-				{block:NoteCount}
-				<p class="note"><a href="#"class="note">{NoteCountWithLabel}</a></p>
-				{/block:NoteCount}
 			</div>
 		</div>
 	{/block:Text}
 	{block:Photo} 
 		<div class="textpost posts-item">
 			<div class="textpostwrapper">
-				{block:Date}
-					<p class="date"><a href="{Permalink}" class="note">{Month} {DayOfMonth}</a></p>
-				{/block:Date}
 					<div class="imagewrapper"><a href="{Permalink}"><img src="{PhotoURL-500}"></a></div>	
 				{block:Caption}
 				<div class="body">{Caption}</div>
@@ -305,9 +277,6 @@ font-family: 'Open Sans', sans-serif;
 	{block:Answer}
     	<div class="textpost posts-item">
 			<div class="textpostwrapper">
-				{block:Date}
-					<p class="date"><a href="{Permalink}" class="note">{Month} {DayOfMonth}</a></p>
-				{/block:Date}
 		    	<div class="asker">
 		    	{Asker} asked: {Question}
 		    	</div>	
